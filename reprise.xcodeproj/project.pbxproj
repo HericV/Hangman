@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7013DAC1956ACCF003B2CDB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E7013DAB1956ACCF003B2CDB /* main.c */; };
+		E7013DAE1956ACCF003B2CDB /* reprise.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7013DAD1956ACCF003B2CDB /* reprise.1 */; };
+		E716AFB4196995CC0068BD34 /* Fonctions.c in Sources */ = {isa = PBXBuildFile; fileRef = E716AFB3196995CC0068BD34 /* Fonctions.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7013DA61956ACCF003B2CDB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				E7013DAE1956ACCF003B2CDB /* reprise.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E7013DA81956ACCF003B2CDB /* reprise */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = reprise; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7013DAB1956ACCF003B2CDB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E7013DAD1956ACCF003B2CDB /* reprise.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = reprise.1; path = reprise/reprise.1; sourceTree = "<group>"; };
+		E716AFB2196995A50068BD34 /* Fonctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonctions.h; sourceTree = "<group>"; };
+		E716AFB3196995CC0068BD34 /* Fonctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Fonctions.c; path = ../Fonctions.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7013DA51956ACCF003B2CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7013D9F1956ACCF003B2CDB = {
+			isa = PBXGroup;
+			children = (
+				E716AFB1196995760068BD34 /* Headers */,
+				E7013DAA1956ACCF003B2CDB /* reprise */,
+				E7013DA91956ACCF003B2CDB /* Products */,
+				E7013DAD1956ACCF003B2CDB /* reprise.1 */,
+			);
+			sourceTree = "<group>";
+		};
+		E7013DA91956ACCF003B2CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7013DA81956ACCF003B2CDB /* reprise */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7013DAA1956ACCF003B2CDB /* reprise */ = {
+			isa = PBXGroup;
+			children = (
+				E7013DAB1956ACCF003B2CDB /* main.c */,
+				E716AFB3196995CC0068BD34 /* Fonctions.c */,
+			);
+			path = reprise;
+			sourceTree = "<group>";
+		};
+		E716AFB1196995760068BD34 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E716AFB2196995A50068BD34 /* Fonctions.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7013DA71956ACCF003B2CDB /* reprise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7013DB11956ACCF003B2CDB /* Build configuration list for PBXNativeTarget "reprise" */;
+			buildPhases = (
+				E7013DA41956ACCF003B2CDB /* Sources */,
+				E7013DA51956ACCF003B2CDB /* Frameworks */,
+				E7013DA61956ACCF003B2CDB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = reprise;
+			productName = reprise;
+			productReference = E7013DA81956ACCF003B2CDB /* reprise */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7013DA01956ACCF003B2CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Heric Vignola";
+			};
+			buildConfigurationList = E7013DA31956ACCF003B2CDB /* Build configuration list for PBXProject "reprise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7013D9F1956ACCF003B2CDB;
+			productRefGroup = E7013DA91956ACCF003B2CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7013DA71956ACCF003B2CDB /* reprise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7013DA41956ACCF003B2CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7013DAC1956ACCF003B2CDB /* main.c in Sources */,
+				E716AFB4196995CC0068BD34 /* Fonctions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E7013DAF1956ACCF003B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E7013DB01956ACCF003B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E7013DB21956ACCF003B2CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7013DB31956ACCF003B2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7013DA31956ACCF003B2CDB /* Build configuration list for PBXProject "reprise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7013DAF1956ACCF003B2CDB /* Debug */,
+				E7013DB01956ACCF003B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7013DB11956ACCF003B2CDB /* Build configuration list for PBXNativeTarget "reprise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7013DB21956ACCF003B2CDB /* Debug */,
+				E7013DB31956ACCF003B2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7013DA01956ACCF003B2CDB /* Project object */;
+}

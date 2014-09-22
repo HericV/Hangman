@@ -1,22 +1,25 @@
 /*  test de reprise de programmation apres un bon petit moment de non prog.
- on va partir sur un jeu de plus ou moins.
+ on va partir sur un jeu de plus ou moins. */
+
+
+/* Trucs a prevoir pour la suite:
+ Mode 2 joueurs
+ Selection aleatoire des mots dans un fichier texte
+ Choix de la difficulté qui influe sur le nombre de chances
+ Représentation graphique d'un pendu (En console bien sure!)
  */
+
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 #include "Fonctions.h"
+
 
 
 int main(int argc, const char * argv[])
 {
-    int nombreDeJoueurs = demandeNombreJoueurs();
-    
-    if (nombreDeJoueurs == 1) {
-        modeUnJoueur();
-    } else {
-        modeDeuxJoueurs();
-    }
-    
-    
+    int nbPlayer;
+    nbPlayer = selectMode();
 }

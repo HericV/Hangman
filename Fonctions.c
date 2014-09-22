@@ -60,3 +60,38 @@ void modeDeuxJoueurs()              // Lance le mode deux joueurs
     printf("Chiffre mistère est =");
     scanf("%d",)
 }
+
+void emptyBuffer()                              // Vide le buffer.
+{
+    char c = getchar();
+    while (c != '\n' && c != EOF)
+    {
+        c = getchar();
+    }
+}
+
+char getOneChar()                               // prendre une seul lettre du buffer.
+{
+    char c;
+    c = getchar();
+    emptyBuffer();
+    return c;
+}
+
+void selectMode() {
+    char nbPlayers;
+    nbPlayers = getOneChar();
+    switch (nbPlayers) {
+        case '1':
+            break;
+        case '2':
+            break;
+        default:
+            break;
+    }
+}
+
+int main(int argc, const char * argv[])
+{
+    selectMode();
+}

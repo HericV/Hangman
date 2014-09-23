@@ -22,6 +22,6 @@ int selectMode();
 void initializeString(char * string, int length);
 
 //Lance le jeu.
-void play();
+void play(int nbPlayer);
 
 #endif

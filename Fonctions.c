@@ -65,22 +65,27 @@ void initializeString(char * string, int length) {
 // Lance le jeu.
 void play(int nbPlayer) {
     
+    char word[100] = "";
+    
+    
     if (nbPlayer == 1) {
-        <#statements#>
+        // Il faudra ensuite aller chercher un mot aléatoire dans une base de donnée (ça peut être un fichier texte)
+        printf("Mode un joueur en cours de Programmation.\n");
+        exit(0);
     } else {
-        <#statements#>
-    }
+        printf("Joueur 1 Quel mot mystere choisissez-vous?\n");
+        printf("Mot mystere = ");
+        scanf("%s", word);
+        emptyBuffer();
+        printf("\n\n\n\n\n\n\n\n\n\n");
+        }
     
     
-    
-    
-    
-    // Il faudra ensuite aller chercher un mot aléatoire dans une base de donnée (ça peut être un fichier texte)
-    char word[] = "Looser";
     char answer[strlen(word)];
     // Le joueur peut se tromper 3 fois
     int attempts = 3;
-    printf("Vous avez %d essai%s !\n", attempts, (attempts <= 1) ? "" : "s");
+    printf("Joueur 2, vous avez %d essai%s !\n", attempts, (attempts <= 1) ? "" : "s");
+    printf("Le mot mystere est = ");
     // On remplis la réponse avec des tirets de la même longueur que le mot demandé
     initializeString(answer, (int)strlen(word));
     printf("\n");

@@ -3,7 +3,7 @@
 
 
 /* Trucs a prevoir pour la suite:
- Mode 2 joueurs
+ Modifier les choses a afficher pour que le rendu soit plus agreable.
  Selection aleatoire des mots dans un fichier texte
  Choix de la difficulté qui influe sur le nombre de chances
  Représentation graphique d'un pendu (En console bien sure!)
@@ -22,4 +22,6 @@ int main(int argc, const char * argv[])
 {
     int nbPlayer;
     nbPlayer = selectMode();
+    
+    play(nbPlayer);
 }

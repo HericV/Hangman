@@ -3,7 +3,6 @@
 
 
 /* Trucs a prevoir pour la suite:
- Modifier les choses a afficher pour que le rendu soit plus agreable.
  Selection aleatoire des mots dans un fichier texte
  Choix de la difficulté qui influe sur le nombre de chances
  Représentation graphique d'un pendu (En console bien sure!)

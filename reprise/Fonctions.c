@@ -91,7 +91,6 @@ void play(int nbPlayer) {
     printf("\n");
     // Tant que la réponse et le mot demandé ne corresponde pas et qu'il nous reste un essai
     while (strcmp(answer, word) != 0 && attempts > 0) {
-        printf("\nWord : %s (%d)\tAnswer : %s (%d)\n", word, (int)strlen(word), answer, (int)strlen(answer));
         printf("\nEntrer une lettre :\n");
         // On récupère un caractère du cin
         char c = getOneChar();
@@ -112,14 +111,18 @@ void play(int nbPlayer) {
                 answer[i] = (c + 32);
             }
         }
+        
+        printf("\n\n\n\n\n\n\n\n\n\n");
+        
         // On affiche le mot à trou complété avec les lettres
         for(int i = 0; i < strlen(word); i++) {
             printf("%c ", answer[i]);
         }
-        printf("\n");
+        printf("\n\n");
         // Si la lettre n'est pas dans le mot
         if(!isInWord) {
             attempts--;
+            printf("Et non la lettre ''%c'' n'est pas dans le mot mystère!\n", c);
             // Si il n'y a plus d'essai possible
             if (attempts == 0) {
                 printf("Perdu !\n");

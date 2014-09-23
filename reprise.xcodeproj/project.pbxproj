@@ -10,6 +10,7 @@
 		E7013DAC1956ACCF003B2CDB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E7013DAB1956ACCF003B2CDB /* main.c */; };
 		E7013DAE1956ACCF003B2CDB /* reprise.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7013DAD1956ACCF003B2CDB /* reprise.1 */; };
 		E716AFB4196995CC0068BD34 /* Fonctions.c in Sources */ = {isa = PBXBuildFile; fileRef = E716AFB3196995CC0068BD34 /* Fonctions.c */; };
+		E7630FFB19D20E1C007FD800 /* dico.c in Sources */ = {isa = PBXBuildFile; fileRef = E7630FFA19D20E1C007FD800 /* dico.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +31,9 @@
 		E7013DAB1956ACCF003B2CDB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E7013DAD1956ACCF003B2CDB /* reprise.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = reprise.1; path = reprise/reprise.1; sourceTree = "<group>"; };
 		E716AFB2196995A50068BD34 /* Fonctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonctions.h; sourceTree = "<group>"; };
-		E716AFB3196995CC0068BD34 /* Fonctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Fonctions.c; path = ../Fonctions.c; sourceTree = "<group>"; };
+		E716AFB3196995CC0068BD34 /* Fonctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Fonctions.c; sourceTree = "<group>"; };
+		E7630FF919D20E04007FD800 /* dico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dico.h; sourceTree = "<group>"; };
+		E7630FFA19D20E1C007FD800 /* dico.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dico.c; path = reprise/dico.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			children = (
 				E7013DAB1956ACCF003B2CDB /* main.c */,
 				E716AFB3196995CC0068BD34 /* Fonctions.c */,
+				E7630FFA19D20E1C007FD800 /* dico.c */,
 			);
 			path = reprise;
 			sourceTree = "<group>";
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E716AFB2196995A50068BD34 /* Fonctions.h */,
+				E7630FF919D20E04007FD800 /* dico.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			files = (
 				E7013DAC1956ACCF003B2CDB /* main.c in Sources */,
 				E716AFB4196995CC0068BD34 /* Fonctions.c in Sources */,
+				E7630FFB19D20E1C007FD800 /* dico.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

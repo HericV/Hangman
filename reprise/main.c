@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include <stdbool.h>
 
 // On vide le buffer du cin
@@ -55,7 +56,6 @@ void play() {
     printf("\n");
     // Tant que la réponse et le mot demandé ne corresponde pas et qu'il nous reste un essai
     while (strcmp(answer, word) != 0 && attempts > 0) {
-        printf("\nWord : %s (%d)\tAnswer : %s (%d)\n", word, (int)strlen(word), answer, (int)strlen(answer));
         printf("\nEntrer une lettre :\n");
         // On récupère un caractère du cin
         char c = getOneChar();
@@ -67,13 +67,13 @@ void play() {
                 isInWord = true;
                 answer[i] = c;
             // Ici on vérifie la lettre majuscule (t remplira T et t par exemple)
-            } else if (word[i] == (c - 32)) {
+            } else if (word[i] == toupper(c)) {
                 isInWord = true;
-                answer[i] = (c - 32);
+                answer[i] = toupper(c);
             // Ici minuscule (T remplira T et t par exemple)
-            } else if (word[i] == (c + 32)) {
+            } else if (word[i] == tolower(c)) {
                 isInWord = true;
-                answer[i] = (c + 32);
+                answer[i] = tolower(c);
             }
         }
         // On affiche le mot à trou complété avec les lettres

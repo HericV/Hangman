@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reprise/main.c"
-            timestampString = "433024742.169011"
+            timestampString = "433140209.344651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "initializeString()"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "selectMode()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include "dico.h"
 
 
 
@@ -67,11 +68,8 @@ void play(int nbPlayer) {
     
     char word[100] = "";
     
-    
     if (nbPlayer == 1) {
-        // Il faudra ensuite aller chercher un mot aléatoire dans une base de donnée (ça peut être un fichier texte)
-        printf("Mode un joueur en cours de Programmation.\n");
-        exit(0);
+        piocherMot(word);
     } else {
         printf("Joueur 1 Quel mot mystere choisissez-vous?\n");
         printf("Mot mystere = ");
@@ -136,5 +134,8 @@ void play(int nbPlayer) {
     // On gagne !
     printf("\nLe mot était %s\n", word);
     printf("Vous avez gagné ! (avec %d essai%s restant%s)\n", attempts, (attempts <= 1) ? "" : "s", (attempts <= 1) ? "" : "s");
+    
+
+    
     exit(1);
 }
